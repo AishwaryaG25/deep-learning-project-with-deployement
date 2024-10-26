@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cnnClassifier
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/AishwaryaG25/Chicken-Disease-Classification--Project
+Author: AishwaryaG25
+Author-email: aishganesh072017@gmail.com
+Project-URL: Bug Tracker, https://github.com/AishwaryaG25/Chicken-Disease-Classification--Project/issues
+
+# deep-learning-project-with-deployement
+This project deals with chicken disease classification- uses mlops DVC pipeline with deployements Azure and AWS
