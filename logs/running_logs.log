@@ -733,3 +733,118 @@ x==========x]
 [2024-10-27 10:25:27,837: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-10-27 10:41:20,629: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.6:80]
+[2024-10-27 10:41:20,633: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-10-27 10:43:19,336: INFO: _internal: 192.168.1.6 - - [27/Oct/2024 10:43:19] "GET / HTTP/1.1" 200 -]
+[2024-10-27 10:44:07,419: INFO: _internal: 192.168.1.6 - - [27/Oct/2024 10:44:07] "POST /predict HTTP/1.1" 200 -]
+[2024-10-27 10:45:04,193: INFO: _internal: 192.168.1.6 - - [27/Oct/2024 10:45:04] "POST /predict HTTP/1.1" 200 -]
+[2024-10-27 10:46:41,557: INFO: _internal: 127.0.0.1 - - [27/Oct/2024 10:46:41] "GET / HTTP/1.1" 200 -]
+[2024-10-27 10:46:55,549: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-10-27 10:46:55,552: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-27 10:46:55,554: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-27 10:46:55,556: INFO: common: created directory at: artifacts]
+[2024-10-27 10:46:55,556: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-27 10:46:55,557: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2024-10-27 10:46:55,700: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-10-27 10:46:55,701: INFO: main: *******************]
+[2024-10-27 10:46:55,701: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-10-27 10:46:55,702: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-27 10:46:55,704: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-27 10:46:55,704: INFO: common: created directory at: artifacts]
+[2024-10-27 10:46:55,705: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-10-27 10:46:56,242: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-10-27 10:46:56,493: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-10-27 10:46:56,494: INFO: main: *******************]
+[2024-10-27 10:46:56,494: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-10-27 10:46:56,496: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-27 10:46:56,497: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-27 10:46:56,498: INFO: common: created directory at: artifacts]
+[2024-10-27 10:46:56,498: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-10-27 10:46:56,499: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-10-27 10:46:56,501: INFO: common: created directory at: artifacts\training]
+[2024-10-27 10:48:39,346: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.6:80]
+[2024-10-27 10:48:39,347: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-10-27 10:49:00,225: INFO: _internal: 127.0.0.1 - - [27/Oct/2024 10:49:00] "GET / HTTP/1.1" 200 -]
+[2024-10-27 10:49:14,792: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-10-27 10:49:14,796: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-27 10:49:14,798: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-27 10:49:14,798: INFO: common: created directory at: artifacts]
+[2024-10-27 10:49:14,799: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-27 10:49:19,192: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: AB27:1DED1A:38C67A:47FA71:671DBAF1
+Accept-Ranges: bytes
+Date: Sun, 27 Oct 2024 05:19:16 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10239-MAA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1730006356.474246,VS0,VE258
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 3b2a404a9fa1b0e477752dede5b1f1f41a85530a
+Expires: Sun, 27 Oct 2024 05:24:16 GMT
+Source-Age: 0
+
+]
+[2024-10-27 10:49:19,365: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-10-27 10:49:19,365: INFO: main: *******************]
+[2024-10-27 10:49:19,365: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-10-27 10:49:19,367: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-27 10:49:19,369: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-27 10:49:19,369: INFO: common: created directory at: artifacts]
+[2024-10-27 10:49:19,370: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-10-27 10:49:19,810: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-10-27 10:49:20,028: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-10-27 10:49:20,028: INFO: main: *******************]
+[2024-10-27 10:49:20,028: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-10-27 10:49:20,030: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-27 10:49:20,032: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-27 10:49:20,032: INFO: common: created directory at: artifacts]
+[2024-10-27 10:49:20,033: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-10-27 10:49:20,033: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-10-27 10:49:20,035: INFO: common: created directory at: artifacts\training]
+[2024-10-27 10:55:09,003: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-10-27 10:55:09,004: INFO: main: *******************]
+[2024-10-27 10:55:09,006: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-10-27 10:55:09,013: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-27 10:55:09,016: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-27 10:55:09,018: INFO: common: created directory at: artifacts]
+[2024-10-27 10:55:31,822: INFO: common: json file saved at: scores.json]
+[2024-10-27 10:55:31,824: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-10-27 10:55:32,710: INFO: _internal: 127.0.0.1 - - [27/Oct/2024 10:55:32] "GET /train HTTP/1.1" 200 -]
+[2024-10-27 10:55:32,747: INFO: _internal: 127.0.0.1 - - [27/Oct/2024 10:55:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2024-10-27 10:57:16,302: INFO: _internal: 127.0.0.1 - - [27/Oct/2024 10:57:16] "[31m[1mGET /predict HTTP/1.1[0m" 405 -]
+[2024-10-27 10:57:24,164: INFO: _internal: 127.0.0.1 - - [27/Oct/2024 10:57:24] "GET / HTTP/1.1" 200 -]
+[2024-10-27 10:57:37,426: INFO: _internal: 127.0.0.1 - - [27/Oct/2024 10:57:37] "POST /predict HTTP/1.1" 200 -]
+[2024-10-27 10:57:51,213: INFO: _internal: 127.0.0.1 - - [27/Oct/2024 10:57:51] "POST /predict HTTP/1.1" 200 -]
+[2024-10-27 10:58:00,838: INFO: _internal: 127.0.0.1 - - [27/Oct/2024 10:58:00] "POST /predict HTTP/1.1" 200 -]
+[2024-10-27 10:58:10,845: INFO: _internal: 127.0.0.1 - - [27/Oct/2024 10:58:10] "POST /predict HTTP/1.1" 200 -]
