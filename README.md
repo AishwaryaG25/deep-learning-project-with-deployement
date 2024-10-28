@@ -1,5 +1,5 @@
-# deep-learning-project-with-deployement
-This project deals with chicken disease classification- uses mlops DVC pipeline with deployements Azure and AWS
+# deep-learning-project
+This project deals with chicken disease classification- uses mlops DVC pipeline 
 
 workflow : [what to update first? ]
 1. Update config.yaml
